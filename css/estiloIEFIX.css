@@ -1,0 +1,8 @@
+[role=main]>div>div {
+	border:0;
+}
+
+form div{
+	display:block;
+	float:none;
+}

@@ -1,0 +1,866 @@
+/*	Indice: 
+	[1] Configurações gerais
+		[1.1] Definições de tipografia
+	[2] Cabeçalho
+		[2.1] Menu superior
+			[2.1.1] Menu "sobre nós"
+			[2.1.2] Menu "contato"
+		[2.2] Menu inferior
+			[2.2.1] Submenu
+	[3] Corpo principal
+		[3.1] Página específica - Index
+		[3.2] Página específica - Quem Somos
+		[3.3] Página específica - Nossa História
+		[3.4] Página específica - Produtos
+		[3.5] Página específica - Soluções
+		[3.6] Página específica - Parceiros
+		[3.7] Página específica - Notícias e Eventos
+			[3.7.1] Itens em comum entre eventos
+					e notícias
+		[3.8] Página específica - Notícias
+		[3.9] Página específica - Eventos
+		[3.10] Página específica - Contato
+		[3.11] Página específica - Suporte	
+	[4] Rodapé
+		[4.1] Parte inferior
+		[4.2] Parte superior
+_________________________________________________*/
+
+/*	[1] Configurações gerais
+_________________________________________________*/
+* {
+	margin:0;
+	padding:0;
+}
+i {
+	font-family:KarminaWeb-Italic;
+	font-style:italic;	
+}
+a {
+	cursor:pointer;
+	text-decoration:none;
+}
+p {
+	margin-bottom:1em;	
+}
+blockquote {
+	margin-bottom:30px;
+}
+label {
+	float:none;	
+}
+figcaption {
+	display:block;		
+}
+hr {
+	border:dashed 1px #cfcfcf;	
+}
+/*	[1.1] Definições de tipografia
+_________________________________________________*/
+body {
+	color:#322f2f;
+	font:.94em/1.2 KarminaSansWeb,"trebuchet ms", sans-serif;
+	background-color:#f2eeeb;
+	min-width:960px;
+	overflow:auto;
+}
+div#navegacaoinferior ul li ul li a, .aux h2,.historico.aux h2,
+.solucoes h2, #bannerinferior h1, #bannerinferior p,
+.produtos.aux a,.produtos h2,.produtos h3, {
+	font-family:KarminaWeb,Georgia,serif !important;
+}
+h1,h2,h3,h4,h5,h6 {
+}
+b,strong,.produtos blockquote,#suporte form p  {
+	font-family:KarminaSansWeb-Bold,"trebuchet ms", sans-serif;
+	font-weight:normal;	
+}
+i,em,blockquote,label,figcaption {
+	font-family:KarminaSansWeb-Italic,"trebuchet ms", sans-serif;
+	font-style:normal;
+}
+.historico.aux th {
+	font-family:KarminaSansWeb,"trebuchet ms", sans-serif;
+}
+h1,h2,h3,h4,h5,h6,blockquote,.aux,label,input,
+figcaption,.historico th,.historico>table>tbody>tr>td,
+.destaques p,.historico.aux h2 {
+	color:#80553c;
+}
+.funcao {
+	color:#bcbcbc;	
+}
+
+/*	[2] Cabeçalho
+_________________________________________________*/
+header {
+	background:url(bg.png) top left repeat-x;
+	box-shadow:0 2px 5px #666;
+	height:86px;
+	width:100%;
+	text-align:center;
+}
+header>div {
+	font-size: .8em;
+	margin:0 auto 86px;	
+	height:86px;
+	width:960px;
+	position:relative;
+	text-align:center;
+}
+/*	[2.1] Menu superior
+_________________________________________________*/
+div#logo {
+	margin:auto ;
+	position:relative;
+	width:300px;
+	height:103px;
+}
+div#logo>a {
+	background:url(logo.png) no-repeat;
+	display:block;
+	width:300px;
+	height:103px;
+}
+div#navegacaosuperior {
+	margin:-103px 0 0;
+	width:960px;
+	height:30px;
+}
+/*	[2.1.1] Menu "sobre nós"
+_________________________________________________*/
+nav#sobre ul {
+	color:#fff;
+	float:left;
+	list-style:url(seta-pequena.png) inside;
+	margin:5px 0 0;	
+}
+nav#sobre ul li {
+	float:left;
+	margin:2px 25px 0 0;
+	width:90px;	
+}
+nav#sobre ul li a{
+	color:#fff;
+}
+nav#contato {
+	float:right;
+	width:250px;
+	margin:5px 0;
+}
+/*	[2.2] Menu inferior
+_________________________________________________*/
+nav#contato ul li {
+	float:right;
+	text-transform:uppercase;
+	font-size:.9em;
+}
+nav#contato ul li a, .compartilhar>div:first-child a{
+	background: #405564;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#405564), to(#4f6b7f));
+	background: -webkit-linear-gradient(#405564, #4f6b7f);
+	background: -moz-linear-gradient(#405564, #4f6b7f);
+	background: -ms-linear-gradient(#405564, #4f6b7f);
+	background: -o-linear-gradient(#405564, #4f6b7f);
+	background: linear-gradient(#405564, #4f6b7f);
+	-pie-background: linear-gradient(#405564, #4f6b7f);
+	border-radius:3px;
+	color:#fff;
+	display:block;
+	margin:0 0 0 4px;
+	padding:3px 7px;
+}
+div#navegacaoinferior {
+	margin:0;
+	width:960px;
+	height:55px;
+}
+div#navegacaoinferior ul{
+	list-style:none;
+	padding:0 80px;
+	overflow:auto;
+}
+div#navegacaoinferior ul li{
+	float:left;
+	width:130px;
+}
+div#navegacaoinferior ul li a{
+	color:#80553c;
+	display:block;
+	font-weight:bold;
+	padding:20px 0 17px;
+	text-shadow:0 1px #242424;
+	text-transform:uppercase;
+}
+/*	[2.2.1] Submenu
+_________________________________________________*/
+.dropdown {
+	background:url(dropdown.png) 110px center no-repeat;	
+}
+.dropdown.selecionado{
+	background:url(backup.png) 110px center no-repeat;	
+}
+div#navegacaoinferior ul li a:hover{
+	border-bottom:4px solid #80553c;
+}
+#terceiro_menu{
+	margin-left:280px;	
+}
+.selecionado {
+	background-color:#80553c!important;
+	color:#ffd200!important;
+	padding:20px 0 21px!important;
+}
+.selecionado,.selecionado:hover {
+	border-bottom:none!important;	
+}
+div#navegacaoinferior ul li ul{
+	background:#754f37;
+	border-bottom:solid 2px #bb7e58;
+	border-bottom-left-radius:3px;
+	border-bottom-right-radius:3px;
+	box-shadow:0 0 5px #666;
+	display:none;
+	overflow:auto;
+	width:130px;
+	padding:0;
+	text-align:center;
+}
+div#navegacaoinferior ul li ul li{
+	border-bottom:1px dashed #865a3f;
+	float:none;
+	height:35px;
+	text-shadow:0 1px #61432f;
+	margin:auto;
+	padding:10px 0 5px;
+	width:95px;
+}
+div#navegacaoinferior ul li ul li a{
+	font-family:KarminaWeb,Georgia,serif !important;
+	font-size:.92em;
+	font-weight:normal;
+	color:#fff;
+	padding:5px 0;
+}
+div#navegacaoinferior ul li ul li a:hover{
+	border-bottom:4px solid #bf774d;
+}
+
+/*	[3] Conteúdo principal
+_________________________________________________*/
+[role=main] {
+	width:100%;
+	text-align:center;
+	margin:0 0 50px;
+}
+[role=main]>div {
+	margin:auto;
+	width:960px;
+	border-top:solid 9px #80553c;	
+}
+[role=main] h1 {
+	background:#fff;
+	display:block;
+	font-size:1.2em;
+	font-weight:normal;
+	padding:40px 0;
+	width:240px;
+	float:left;
+	text-transform:uppercase;
+	z-index:999;
+}
+[role=main] h2 {
+	margin:1em 0 2.5em;
+	font-size:1.2em;
+}
+[role=main]>div>div {
+	background:#fff;
+	border:solid 1px #c9c6c2;
+	border-top:none;
+	width:600px;
+	margin-left:238px;
+	padding:35px 60px 50px;
+	text-align:left;
+	z-index:1;
+}
+.aux {
+	float:left;
+	margin:10px 0 0 -300px;
+	width:240px;	
+}
+.aux h2 {
+	font-size:1em;
+	margin:-10px 0 1em;
+	padding:20px;
+	border-bottom:dashed 1px #cfcfcf;	
+}
+.encap{
+	overflow:auto;	
+}
+
+/*	[3.1] Página específica - Index
+_________________________________________________*/
+
+#bannersuperior {
+	background:#191712 url(home_banner.png) center center no-repeat;
+	border-bottom:solid 1px #000;
+	border-top:solid 1px #000;	
+	width:100%;
+	height:400px;
+}
+#bannersuperior div {
+	background:none;
+	border:none;
+	width:960px;
+	overflow:hidden;
+	margin:auto;
+	padding:0;
+}
+#bannerinferior {
+	background:#3c312a;
+	border-top:solid 1px #6a6a6a;
+	height:300px;
+	width:100%;
+	padding-top:25px;
+}
+#bannerinferior>div {
+	background:none;
+	border:none;
+	margin:auto;
+	padding:35px 0 50px;
+	width:960px;	
+}
+.modulomenor,
+.modulomaior {
+	background:#f2eeeb;
+	border-radius:5px;
+	float:left;
+	margin-left:34px;
+	padding:3px;
+}
+.modulomaior{
+	width:355px;
+}
+.modulomenor{
+	background:#f2eeeb url(bannerindex.png) left top no-repeat;
+	width:255px;
+}
+.modulomenor:first-child {
+	background-position:right top;
+	margin-left:0;
+}
+.modulomenor>div,
+.modulomaior>div{
+	border-radius:5px;
+	text-align:center;
+}
+.modulomenor>div{
+	border:2px dashed #d7c9c1;
+	height:140px;
+	width:250px;
+	padding-top:92px;
+}
+#bannerinferior .modulomaior>div{
+	height:240px;
+	width:350px;
+}
+#bannerinferior h1 {
+	background:none;
+	display:block;
+	padding:0;
+	margin:1em 0 .5em;
+	width:inherit;	
+}
+#bannerinferior p {
+	color:#474747;
+	font-size:.82em;
+	margin:0 1em 1.2em;	
+}
+#bannerinferior a,[type=submit] {
+	background:#42596a;
+	box-shadow:2px 4px 4px #c4bfbb;
+	border-radius:3px;
+	color:#ffffff;
+	font-size:.82em;
+	padding:7px 10px;
+	text-transform:uppercase;
+}
+.modulomaior img {
+	border-top-left-radius:4px;
+	border-top-right-radius:4px;
+	display:block;
+	float:none;
+	margin:-5px 0 0 -3px;	
+}
+/*	[3.2] Página específica - Quem Somos
+_________________________________________________*/
+.direita figure,.direita figure *{
+	float:right;	
+}
+.esquerda figure,.esquerda figure * {
+	float:left;	
+}
+.direita figcaption,.esquerda figcaption {
+	margin: 50px 10px 20px;	
+}
+.direita div, .esquerda div {
+	padding: 50px 0 20px;
+	margin:0 0 40px;	
+}
+.direita blockquote,.esquerda blockquote {
+	color:#322f2f !important;
+}
+/*	[3.3] Página específica - Nossa História
+_________________________________________________*/
+.historia {
+	border-bottom:dashed 1px #cfcfcf;
+	margin:30px 0;	
+}
+.historia h2 {
+	background:url(historia.png) 0 0 no-repeat;
+	display:block;
+	float:left;
+	margin:0 35px 0 -60px;
+	padding:40px 52px 55px 105px;
+	text-shadow:0 1px #eee;
+}
+/*	[3.4] Página específica - Produtos
+_________________________________________________*/
+.produtos.aux {
+	margin-top:-18px;	
+}
+.produtos.aux ul {
+	list-style:none;	
+}
+.produtos.aux a {
+	background:#fff;
+	border-left:solid 2px #80553c;
+	border-right:solid 1px #d3d3d3;
+	color:#80553c;
+	display:block;
+	font-size:.9em;
+	margin:3px 0 3px 2px;
+	padding:19px 0 18px 40px;
+	text-transform:uppercase;
+}
+.produtos.aux a:hover {
+	background:#c6cdd2;
+	border-left:solid 2px #42596a;
+	color:#42596a;
+	margin-left:22px;
+}
+.produtos.aux .ativo,
+.produtos.aux .ativo:hover {
+	background:#80553c;
+	border-left:solid 2px #80553c;
+	color:#fff;
+	margin-left:42px;
+}
+#uc {
+	padding:11px 0 10px 40px;	
+}
+.produtos h3 {
+	border-bottom:dashed 1px #cfcfcf;	
+	font-size:1.3em;
+	margin:1em 0 .75em;
+	padding-bottom:.3em;
+	text-transform:uppercase;	
+}
+.produtos .modulomenor {
+	background:#f3f3f3 url(produtos.gif) -395px 15px no-repeat;
+	box-shadow:0 5px 0 #e5e5e5;
+	height:300px;
+	width:171px;
+	margin-bottom:34px;
+}
+.produtos .modulomenor:first-of-type {
+	background-position:5px 15px;
+	margin-left:0;
+}
+.produtos .modulomenor h3{
+	border:none;
+	font-size:1.1em;
+	font-weight:normal;
+	margin-top:.2em;
+	text-align:left;
+}
+.produtos .modulomenor p{
+	text-align:left;
+}
+#resultados {
+	background-position:-800px 15px;
+}
+.produtos .modulomenor>div {
+	height:204px;
+	width:127px;
+	padding:92px 20px 0;
+}
+.produtos blockquote {
+	font-style:normal;	
+	margin-top:1.5em;
+}
+/*	[3.5] Página específica - Soluções
+_________________________________________________*/
+.solucoes h2,.produtos h2{
+	border-bottom:dashed 1px #cfcfcf;	
+	font-size:1.5em;
+	margin:2em 0 1.5em;
+	padding-bottom:10px;
+}
+.aux ul{
+	list-style:none;	
+}
+.clientes.aux li{
+	background:url(solucoes.png);
+	margin:10px 0;
+	width:230px;
+	height:110px;
+	padding:35px 0 0;
+	text-align:center;
+}
+
+.clientes.aux li:hover{
+	background-position:left bottom;
+}
+.clientes.aux li a{
+	display:block;
+	width:140px;
+	height:40px;
+	margin:0 45px;
+	padding:20px 0;
+	text-align:center;
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+.clientes.aux li:hover a{
+	background-image:none!important;
+}
+.clientes.aux li a span{
+	color:#555;
+	display:none;
+}
+.clientes.aux li:hover a span{
+	display:inline;
+}
+
+/*	[3.6] Página específica - Parceiros
+_________________________________________________*/
+.parceiros {
+	float:left;
+	width:280px;
+	margin:30px 10px;	
+}
+.parceiros h2 {
+	font-weight:normal;
+	margin:0 0 1em;	
+	text-transform:uppercase;
+}
+.parceiros figure {
+	background:url(parceiros.png) center center no-repeat;
+	padding:50px;	
+}
+.parceiros img {
+	box-shadow:none;
+	border-radius:0;	
+}
+/*	[3.7] Página específica - Notícias e eventos
+_________________________________________________*/
+.destaques {
+	overflow:auto;	
+}
+.destaques article {
+	float:left;
+	margin-left:40px;
+	padding:0;
+	width:270px;
+}
+.destaques article:first-child {
+	margin-left:0;
+}
+
+.destaques article figure img {
+	box-shadow:0px 5px 5px #c1c1c1;
+}
+.destaques h2 {
+	margin:1em 0 .75em;	
+}
+.historico [type=button] {
+	cursor:pointer;
+	background:#80543b;
+	border:none;
+	box-shadow:none;
+	color:#fff;
+	font-size:.7em;
+	font-weight:bold;
+	margin:0;
+	text-transform:uppercase;
+	width:100%;
+}
+.historico.aux h2 {
+	font-family:KarminaWeb,Georgia,serif;
+	font-size:1em;
+	font-weight:normal;
+	padding-left:0;
+	text-transform:uppercase;
+}
+.historico.aux h2 strong {
+	font-family:KarminaWeb,Georgia,serif;
+	font-size:1.5em;
+}
+.historico.aux th {
+	color:#42596a;
+	font-weight:normal;
+}
+/*		[3.7.1] Itens em comum entre eventos
+				e notícias
+_________________________________________________*/
+article figure img{
+	border-radius:10px;
+	box-shadow:5px 5px 0 #efe0d7;
+}
+.compartilhar {
+	background:url(bg-barra.gif) repeat;
+	box-shadow:0 5px 5px #efe0d7;
+	color:#fff;
+	font-size: .8em;
+	width:600px;
+	padding:10px;
+	border-top:1px solid #ab6d4a;
+	border-bottom:1px solid #ab6d4a;	
+}
+.compartilhar>div,
+.compartilhar>div:first-child a{
+	display:inline-block;
+}
+.compartilhar>div:first-child{
+	background:rgba(255,255,255,0.2);
+	border-radius:3px;
+	padding:5px 10px;
+	margin:-5px 0;	
+}
+/*	[3.8] Página específica - Notícias
+_________________________________________________*/
+
+.historico table {
+	width:100%;
+}
+.historico th {
+	border-bottom:dashed 1px #cfcfcf;
+	font-size:1.2em;
+	padding:1em 0 .5em;
+}
+.historico>table>tbody>tr>td {
+	padding:10px;
+}.historico>table>tbody>tr>td:first-child {
+	color:#42596a;
+	padding:0 10px 10px;
+	text-align:center;	
+}
+.historico>table>tbody>tr>td strong {
+	font-size:1.35em;
+	font-weight:normal;
+}
+.historico>table>tbody>tr>td a,
+.destaques a {
+	color:#42596a;
+	display:list-item;
+	list-style:url(seta-pequena.png) inside;
+	text-align:right;
+}
+/*	[3.9] Página específica - Eventos
+_________________________________________________*/
+.agenda {
+	overflow:auto;
+	width:620px;
+	margin:30px 0;
+}
+.agenda div {
+	background:#c8cfd4;
+	padding:10px 20px;
+	margin-left:2px;
+	float:left;
+	width:165px;
+}
+.agenda div:first-child {
+	margin-left:0;
+}
+.agenda h1 {
+	color:#42596a;
+	text-shadow:0 1px #eee;
+	background:none;
+	border-bottom:dashed 1px #9ba9b3;
+	padding:10px 0;
+	width:160px;
+	text-align:center;
+	text-transform:uppercase;
+	float:none;
+}
+.quando h1,.inscricoes h1, .onde h1
+,.inscricoes .contato {
+	background-image:url(bg.png);
+	background-repeat:no-repeat;	
+}
+.quando h1 {background-position:-76px -192px}
+.inscricoes h1 {background-position:-71px -268px}
+.onde h1 {background-position:-72px -153px}
+.agenda h2 {
+	color:#333;
+	font-weight:normal;
+	font-size:.87em;
+	margin-bottom:1em;
+	text-transform:uppercase;
+}
+.agenda p {
+	margin-top:1em;
+}
+.agenda a {
+	color:#322f2f;
+	text-decoration:underline;	
+}
+.inscricoes .contato {
+	background-position:-93px -231px;
+	width:140px;
+	padding:0 0 5px 25px;	
+}
+/*	[3.10] Página específica - Contato
+_________________________________________________*/
+.contato.aux {
+	margin-top:90px;
+}
+.contato.aux>div:first-child {
+	background:url(bg.png) 0 -151px no-repeat;
+	width:71px;
+	height:71px;
+	margin:0 10px 50px 0;
+	float:left;
+}
+form {
+	width:530px;
+	overflow:auto;
+	padding-top:10px;	
+}
+form td div, input, textarea {
+	border:solid 1px #e4dfdc;
+}
+form td div{
+	box-shadow:0 0 10px #ddd;
+	border-radius:6px;
+	display:inline-block;
+	margin:0;
+	padding:4px;
+}
+label {
+	float:none;
+	display:block;
+	margin:15px 0 10px;
+}
+input, textarea {
+	box-shadow:0 2px 2px #eee inset;
+	border-radius:3px;
+	padding:5px;
+}
+[type=text]:active,[type=text]:focus,
+textarea:active,textarea:focus {
+	background-color:#f7efef;
+}
+[type=submit] {
+	box-shadow:none;
+	float:right;
+	margin:15px 0;
+}
+form div {
+	box-shadow:none;
+	border:none;
+	padding:0;
+	margin:0 0 0 30px;
+}
+#divddd {
+	margin-right:10px;
+}
+/*	[3.11] Página específica - Suporte
+_________________________________________________*/
+
+#suporte h3 {	
+	list-style:decimal;
+}
+#suporte form {
+	overflow:hidden;
+	background:#f2eeeb;
+	width:571px;
+	margin:0 -26px -10px;
+	padding-left:25px;	
+}
+#suporte form label, #suporte form p{
+	margin-right:10px;	
+}
+#suporte form p {
+	color:#80553c;	
+	float:left;
+}
+#suporte form label {
+	color:#8a8989;
+	display:inline;
+}
+/*	[4] Rodapé
+_________________________________________________*/
+footer {
+	background:#2C2C2C fixed;
+	border-top:2px ridge;
+	color:#fff;
+	text-align:center;
+	width:100%;
+	position:relative;
+	bottom:0;
+}
+/* [4.1] Parte inferior
+_________________________________________________*/
+footer>div {
+	background:#242424 fixed;
+	font-size: .8em;
+	height:16px;	
+	padding:5px;
+}
+/* [4.2] Parte Superior
+_________________________________________________*/
+footer>div:first-child {
+	background:none;
+	margin:auto;
+	padding:15px 0 25px;
+	height:59px;
+	width:960px;
+}
+footer>div>div{
+	background:url(bg.png) -71px -86px no-repeat;
+	font-size:1.17em;
+	height:62px;
+	padding-left:48px;
+	text-align:left;
+	float:left;
+}
+footer>div>address{
+	text-align:right;
+	float:right;
+	font-style:normal;
+}
+footer h1{
+	border:none;
+	color:#fff;
+	font-size:1.35em;
+	font-weight:normal;
+	margin-bottom:.25em;
+	text-align:right;
+}
+footer address small{
+	font-size:1em;
+	font-variant:small-caps;
+}
+footer>div:first-child span,
+footer>div:first-child strong
+,.aux strong{
+	display:block;
+	float:none;	
+}
+footer>div:first-child strong,.aux strong{
+	font-size:1.5em;
+	margin:0 0 .3em;
+}
