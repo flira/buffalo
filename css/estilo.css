@@ -1,32 +1,29 @@
-/*	Indice: 
-	[1] Configurações gerais
-		[1.1] Definições de tipografia
-	[2] Cabeçalho
-		[2.1] Menu superior
-			[2.1.1] Menu "sobre nós"
-			[2.1.2] Menu "contato"
-		[2.2] Menu inferior
+/*	TOC: 
+	[1] Basic Styles
+		[1.1] Typography
+	[2] Header
+		[2.1] Upper Menu
+			[2.1.1] "About Us" Menu
+		[2.2]Lower Menu
 			[2.2.1] Submenu
-	[3] Corpo principal
-		[3.1] Página específica - Index
-		[3.2] Página específica - Quem Somos
-		[3.3] Página específica - Nossa História
-		[3.4] Página específica - Produtos
-		[3.5] Página específica - Soluções
-		[3.6] Página específica - Parceiros
-		[3.7] Página específica - Notícias e Eventos
-			[3.7.1] Itens em comum entre eventos
-					e notícias
-		[3.8] Página específica - Notícias
-		[3.9] Página específica - Eventos
-		[3.10] Página específica - Contato
-		[3.11] Página específica - Suporte	
-	[4] Rodapé
-		[4.1] Parte inferior
-		[4.2] Parte superior
+	[3] Main Content
+		[3.1] Specific Style - Index
+		[3.2] Specific Style - Quem Somos
+		[3.3] Specific Style - Nossa História
+		[3.4] Specific Style - Produtos
+		[3.5] Specific Style - Soluções
+		[3.6] Specific Style - Parceiros
+		[3.7] Specific Style - Notícias e Eventos
+		[3.8] Specific Style - Notícias
+		[3.9] Specific Style - Eventos
+		[3.10] Specific Style - Contato
+		[3.11] Specific Style - Suporte	
+	[4] Footer
+		[4.1] Upper Footer
+		[4.2] Lower Footer
 _________________________________________________*/
 
-/*	[1] Configurações gerais
+/*	[1] Basic Styles
 _________________________________________________*/
 * {
 	margin:0;
@@ -55,7 +52,7 @@ figcaption {
 hr {
 	border:dashed 1px #cfcfcf;	
 }
-/*	[1.1] Definições de tipografia
+/*	[1.1] Typography
 _________________________________________________*/
 body {
 	color:#322f2f;
@@ -91,7 +88,7 @@ figcaption,.historico th,.historico>table>tbody>tr>td,
 	color:#bcbcbc;	
 }
 
-/*	[2] Cabeçalho
+/*	[2] Header
 _________________________________________________*/
 header {
 	background:url(bg.png) top left repeat-x;
@@ -108,7 +105,7 @@ header>div {
 	position:relative;
 	text-align:center;
 }
-/*	[2.1] Menu superior
+/*	[2.1] Upper Menu
 _________________________________________________*/
 div#logo {
 	margin:auto ;
@@ -127,7 +124,7 @@ div#navegacaosuperior {
 	width:960px;
 	height:30px;
 }
-/*	[2.1.1] Menu "sobre nós"
+/*	[2.1.1] "About Us" Menu
 _________________________________________________*/
 nav#sobre ul {
 	color:#fff;
@@ -148,7 +145,7 @@ nav#contato {
 	width:250px;
 	margin:5px 0;
 }
-/*	[2.2] Menu inferior
+/*	[2.2]Lower Menu
 _________________________________________________*/
 nav#contato ul li {
 	float:right;
@@ -246,7 +243,7 @@ div#navegacaoinferior ul li ul li a:hover{
 	border-bottom:4px solid #bf774d;
 }
 
-/*	[3] Conteúdo principal
+/*	[3] Main Content
 _________________________________________________*/
 [role=main] {
 	width:100%;
@@ -298,7 +295,7 @@ _________________________________________________*/
 	overflow:auto;	
 }
 
-/*	[3.1] Página específica - Index
+/*	[3.1] Specific Style - Index
 _________________________________________________*/
 
 #bannersuperior {
@@ -392,7 +389,7 @@ _________________________________________________*/
 	float:none;
 	margin:-5px 0 0 -3px;	
 }
-/*	[3.2] Página específica - Quem Somos
+/*	[3.2] Specific Style - Quem Somos
 _________________________________________________*/
 .direita figure,.direita figure *{
 	float:right;	
@@ -410,7 +407,7 @@ _________________________________________________*/
 .direita blockquote,.esquerda blockquote {
 	color:#322f2f !important;
 }
-/*	[3.3] Página específica - Nossa História
+/*	[3.3] Specific Style - Nossa História
 _________________________________________________*/
 .historia {
 	border-bottom:dashed 1px #cfcfcf;
@@ -424,7 +421,7 @@ _________________________________________________*/
 	padding:40px 52px 55px 105px;
 	text-shadow:0 1px #eee;
 }
-/*	[3.4] Página específica - Produtos
+/*	[3.4] Specific Style - Produtos
 _________________________________________________*/
 .produtos.aux {
 	margin-top:-18px;	
@@ -499,7 +496,7 @@ _________________________________________________*/
 	font-style:normal;	
 	margin-top:1.5em;
 }
-/*	[3.5] Página específica - Soluções
+/*	[3.5] Specific Style - Soluções
 _________________________________________________*/
 .solucoes h2,.produtos h2{
 	border-bottom:dashed 1px #cfcfcf;	
@@ -543,7 +540,7 @@ _________________________________________________*/
 	display:inline;
 }
 
-/*	[3.6] Página específica - Parceiros
+/*	[3.6] Specific Style - Parceiros
 _________________________________________________*/
 .parceiros {
 	float:left;
@@ -563,7 +560,7 @@ _________________________________________________*/
 	box-shadow:none;
 	border-radius:0;	
 }
-/*	[3.7] Página específica - Notícias e eventos
+/*	[3.7] Specific Style - Notícias e eventos
 _________________________________________________*/
 .destaques {
 	overflow:auto;	
@@ -611,9 +608,6 @@ _________________________________________________*/
 	color:#42596a;
 	font-weight:normal;
 }
-/*		[3.7.1] Itens em comum entre eventos
-				e notícias
-_________________________________________________*/
 article figure img{
 	border-radius:10px;
 	box-shadow:5px 5px 0 #efe0d7;
@@ -638,7 +632,7 @@ article figure img{
 	padding:5px 10px;
 	margin:-5px 0;	
 }
-/*	[3.8] Página específica - Notícias
+/*	[3.8] Specific Style - Notícias
 _________________________________________________*/
 
 .historico table {
@@ -667,7 +661,7 @@ _________________________________________________*/
 	list-style:url(seta-pequena.png) inside;
 	text-align:right;
 }
-/*	[3.9] Página específica - Eventos
+/*	[3.9] Specific Style - Eventos
 _________________________________________________*/
 .agenda {
 	overflow:auto;
@@ -722,7 +716,7 @@ _________________________________________________*/
 	width:140px;
 	padding:0 0 5px 25px;	
 }
-/*	[3.10] Página específica - Contato
+/*	[3.10] Specific Style - Contato
 _________________________________________________*/
 .contato.aux {
 	margin-top:90px;
@@ -777,7 +771,7 @@ form div {
 #divddd {
 	margin-right:10px;
 }
-/*	[3.11] Página específica - Suporte
+/*	[3.11] Specific Style - Suporte
 _________________________________________________*/
 
 #suporte h3 {	
@@ -801,7 +795,7 @@ _________________________________________________*/
 	color:#8a8989;
 	display:inline;
 }
-/*	[4] Rodapé
+/*	[4] Footer
 _________________________________________________*/
 footer {
 	background:#2C2C2C fixed;
@@ -812,7 +806,7 @@ footer {
 	position:relative;
 	bottom:0;
 }
-/* [4.1] Parte inferior
+/* [4.1] Upper Footer
 _________________________________________________*/
 footer>div {
 	background:#242424 fixed;
@@ -820,7 +814,7 @@ footer>div {
 	height:16px;	
 	padding:5px;
 }
-/* [4.2] Parte Superior
+/* [4.2] Lower Footer
 _________________________________________________*/
 footer>div:first-child {
 	background:none;
